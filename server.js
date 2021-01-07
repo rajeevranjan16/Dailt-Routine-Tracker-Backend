@@ -13,9 +13,7 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use("/todo", router);
 const PORT = 4000;
-/* 
-const CONNECTION_URL =
-  "mongodb+srv://memories_project:abcd@1234@cluster0.xsxdg.mongodb.net/crudWithHooks?retryWrites=true&w=majority"; */
+
 mongoose
   .connect(process.env.MONGODB_CONNECTION_STRING, {
     useNewUrlParser: true,
