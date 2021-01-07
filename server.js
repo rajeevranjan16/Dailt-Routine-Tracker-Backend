@@ -21,7 +21,7 @@ mongoose
     useCreateIndex: true,
   })
   .then(() =>
-    app.listen(PORT, () => console.log(`Server running on port : ${PORT}`))
+    app.listen(PORT, () => console.log(`Server running on the port : ${PORT}`))
   )
   .catch((error) => console.log(error.message));
 mongoose.set("useFindAndModify", false);
